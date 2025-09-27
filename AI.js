@@ -1,6 +1,9 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const GEMINI_KEYS = JSON.parse(process.env.GEMINI_KEY || "[]"); // ["key1","key2","key3"]
+const GEMINI_KEYS = ["AIzaSyC6lz5ZpncCxySSFwSk7La558pCbRoTY0I",
+                     "AIzaSyBDhzXtzm24-zZOzQO0BLUsXRDukHJFq6g",
+                     "AIzaSyBI0ftsrGV4JLba072feTR6UJ9a9DtzqOs",
+                     "AIzaSyDJQgYT5wR0jFVPnt7wY808Ev9N24XxmOA" ] || "[]"; // ["key1","key2","key3"]
 let keyIndex = 0;
 let genAI = new GoogleGenerativeAI(GEMINI_KEYS[keyIndex]);
 
