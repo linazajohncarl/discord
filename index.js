@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 });
 app.listen(3000, () => console.log("🌐 Web server running on port 3000"));
 
-const TOKEN = ${{DISCORD_BOT_TOKEN}};
+const TOKEN = process.env.DISCORD_BOT_TOKEN;
 
 // --- Discord Bot ---
 const client = new Client({
